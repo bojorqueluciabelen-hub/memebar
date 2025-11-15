@@ -37,7 +37,10 @@ body {
     border: 1px solid #f05fb6;
     border-radius: 5px;
 }
-
+.collapse {
+    display: flex;
+    justify-content:center;
+}
 
 h1 {
     color: #f05fb6;
@@ -222,6 +225,10 @@ p {
     h1{
         font-size: 30px;
     }
+    .collapse {
+    display: flex;
+    justify-content:flex-start;
+    }
     .carousel-inner {
         width: 300px;
     }
@@ -300,6 +307,10 @@ p {
 @media (min-width:577px) and (max-width:990px) {
     .carousel-inner {
         width: 500px;
+    }
+    .collapse {
+    display: flex;
+    justify-content:flex-start;
     }
     footer {
         margin-top: 30px;
