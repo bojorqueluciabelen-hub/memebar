@@ -223,9 +223,10 @@ p {
 }
 
 /*pagina sobre nosotros*/
-.parrafo-about-us {
+.parrafo-about-us p {
     margin: 10px 0px;
     padding: 20px;
+    color: #f05fb6;
 }
 
 .aboutus-container {
@@ -249,6 +250,9 @@ p {
     .collapse {
     display: flex;
     justify-content:flex-start;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1.10rem;
     }
     .slide-content {
         flex-direction: column;
@@ -275,6 +279,12 @@ p {
     .footer-container {
         flex-direction: column;
         align-items: center;
+    }
+    .footer-container p {
+        font-size: 16px;
+    }
+    .redes-icon a {
+        font-size: 16px;
     }
     .container-prod {
         display: grid;
@@ -314,6 +324,9 @@ p {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+    .aboutus-container p{
+        font-size: 18px;
+    }
     .aboutus-container img {
         margin-left: 50px;
     }
@@ -338,6 +351,9 @@ p {
     .collapse {
     display: flex;
     justify-content:flex-start;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1.10rem;
     }
 
     .img-fluid {
@@ -364,6 +380,12 @@ p {
         margin-left: 50px;
         margin-bottom: 40px;
     }
+    .footer-container p {
+        font-size: 18px;
+    }
+    .redes-icon a {
+        font-size: 18px;
+    }
 
     .container-prod {
         display: grid;
@@ -375,7 +397,7 @@ p {
     .titulo-menu {
         margin: 8px;
         padding: 10px;
-        font-size: 15px;
+        font-size: 20px;
     }
     .card-text {
         margin: 8px;
@@ -393,6 +415,9 @@ p {
     }
     .aboutus-container img {
         margin-left: 250px;
+    }
+    .aboutus-container p{
+        font-size: 20px;
     }
     .form-container {
         flex-direction: column;
