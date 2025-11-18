@@ -13,8 +13,9 @@ body {
 }
 
 /*Header_ul*/
+
 .logo-bar {
-    width: 200px;
+    width: 150px;
 }
 
 .navbar-nav {
@@ -69,19 +70,24 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
+    width: 100%;
     background-color: #f05fb6;
-    padding: 10px;
+    padding: 5px;
+}
+.img-fluid {
+    margin-top: 10px;
+    width: 500px;
+    height: 400px;
 }
 
 .slide-content {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items:center;
-    padding: 0px 20px;
-    margin: 0px 20px;
-    gap: 5px;
+    /*padding: 0px 20px;
+    margin: 0px 20px;*/
+    gap: 20px;
     
 }
 
@@ -89,14 +95,12 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid black;
     padding: 10px;
-    width: 450px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
 }
 .carousel-text h4, p {
     color: black;
-    border: 2px solid black;
 }
 
 /*footer*/
@@ -106,6 +110,10 @@ p {
     padding: 10px;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.footer-p {
+    color: #f05fb6;
 }
 
 
@@ -242,6 +250,24 @@ p {
     display: flex;
     justify-content:flex-start;
     }
+    .slide-content {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .img-fluid {
+        margin-top: 10px;
+        padding: 5px;
+        width: 400px;
+        height: 300px;
+    }
+    .carousel-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:5px;
+        width: 300px;
+        height: 200px;
+    }
 
     footer {
         margin-top: 25px;
@@ -313,6 +339,20 @@ p {
     display: flex;
     justify-content:flex-start;
     }
+
+    .img-fluid {
+        margin-top: 10px;
+        padding: 5px;
+        width: 800px;
+        height: 400px;
+    }
+    .carousel-text {
+        justify-content: center;
+        padding: 5px;
+        width: 500px;
+        height: 400px;
+    }
+
     footer {
         margin-top: 30px;
     }
