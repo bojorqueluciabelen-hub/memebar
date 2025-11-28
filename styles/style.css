@@ -102,6 +102,9 @@ p {
 .carousel-text h4, p {
     color: black;
 }
+.promociones-container p {
+    color: #f05fb6;
+}
 
 /*footer*/
 .footer-container {
@@ -220,6 +223,14 @@ p {
     color: black;
     text-align: center;
     font-size: 20px;
+}
+
+.horarios-locales {
+    margin: 8px;
+    padding: 5px;
+}
+.horarios-locales p {
+    color: #f05fb6;
 }
 
 /*pagina sobre nosotros*/
