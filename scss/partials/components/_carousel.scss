@@ -1,0 +1,26 @@
+@use '../utilities/mixins';
+
+.slide {
+    @include mixins.flex(row,center,center);
+    width: 100%;
+    background-color: #f05fb6;
+    padding: 5px;
+    .slide-content {
+        @include mixins.flex(row,center,center);
+        gap: 20px;
+        .img-fluid {
+            margin-top: 10px;
+            width: 500px;
+            height: 400px;
+        }
+        .carousel-text {
+            @include mixins.flex(column,center,center);
+            padding: 10px;
+            width: 500px;
+            height: 400px;
+            h4,p{
+                color: black;
+            }
+        }
+    }
+}

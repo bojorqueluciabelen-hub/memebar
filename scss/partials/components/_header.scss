@@ -1,0 +1,26 @@
+
+.navbar {
+    background-color: black;
+    
+    .container-fluid {
+        .logo-bar {
+            width: 150px;
+        }
+        .navbar-toggler-icon {
+            background-color: #f05fb6;
+            border: 1px solid #f05fb6;
+            border-radius: 5px;
+            }
+        .collapse {
+            .navbar-nav {
+                .nav-link {
+                    color: #f05fb6;
+                    &:hover {
+                        color: black;
+                        background-color: #f05fb6;
+                    }
+                }
+            }
+        }
+    }
+}

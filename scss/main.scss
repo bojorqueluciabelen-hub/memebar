@@ -1,0 +1,16 @@
+//BASE
+@use './partials/base/reset';
+@use './partials/base/tipografia';
+
+//COMPONENTS
+@use './partials/components/general';
+@use './partials/components/header';
+@use './partials/components/footer';
+@use './partials/components/carousel';
+@use './partials/components/promociones';
+@use './partials/components/proveedores';
+@use './partials/components/novedades';
+@use './partials/components/grids';
+@use './partials/components/sucursales';
+@use './partials/components/aboutus';
+@use './partials/components/form';

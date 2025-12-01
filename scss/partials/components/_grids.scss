@@ -1,0 +1,34 @@
+@use '../utilities/mixins';
+
+.container-prod {
+    @include mixins.grid(1fr 1fr,1fr 1fr,15px,10px);
+    .card-producto {
+        @include mixins.flex(auto,auto,center);
+        .img-menu {
+            margin: 15px;
+            width: 250px;
+            height: 200px;
+        }
+        .titulo-menu {
+            margin: 15px;
+            font-size: 15px;
+        }
+
+    }
+}
+
+.container-helados {
+    @include mixins.grid(1fr 1fr,1fr,15px,10px); 
+    .card-producto {  
+        @include mixins.flex(auto,auto,center);
+        .img-menu-hel {
+            margin: 15px;
+            width: 200px;
+            height: 250px;
+        }
+        .titulo-menu {
+                margin: 15px;
+                font-size: 15px;
+        }
+    }
+}

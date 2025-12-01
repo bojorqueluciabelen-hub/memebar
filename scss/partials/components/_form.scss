@@ -1,0 +1,22 @@
+@use '../utilities/mixins';
+
+.form-container {
+    @include mixins.flex(row,space-evenly,center);
+    .div-form {
+        width: 700px;
+        margin: 10px 25px;
+        padding: 15px 20px;
+        .mb-3 {
+            .form-control{
+            background-color: #f05fb6;
+            border: #f05fb6;
+            }
+            label {
+                color: #f05fb6;
+            }
+        }
+    }
+    img {
+        width: 300px;
+    }
+}

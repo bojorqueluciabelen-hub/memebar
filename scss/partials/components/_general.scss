@@ -1,0 +1,25 @@
+@use '../utilities/variables';
+
+body {
+    background-color: black;
+    margin: 0px 10px;
+}
+
+h1 {
+    color: variables.$main-color;
+    font-size: variables.$main-size;
+}
+
+h2 {
+    color: variables.$main-color;
+}
+
+h3 {
+    color: variables.$main-color;
+    font-size: 18px;
+}
+
+p {
+    color: variables.$main-color;
+}
+

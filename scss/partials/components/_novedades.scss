@@ -1,0 +1,26 @@
+@use '../utilities/mixins';
+
+.novedades {
+    @include mixins.flex(column,center,center);
+    width: 800px;
+    margin-left: 250px;
+    padding: 20px 80px;
+    h3 {
+        font-size: 24px;
+    }
+    .suscribir {
+        @include mixins.flex(row,space-between,center);
+        gap: 5px;
+        .form-control {
+            width: 300px;
+            height: 50px;
+        }
+        .boton_enviar {
+            display: inline-block;
+            background-color: gray;
+            padding: 10px 15px;
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+    }
+}

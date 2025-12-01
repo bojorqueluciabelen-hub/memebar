@@ -1,0 +1,14 @@
+@use '../utilities/mixins';
+
+.footer-container {
+    @include mixins.flex(row,space-evenly,center);
+    .footer-p {
+        color: #f05fb6;
+        font-size: 16px;
+    }
+    .meme-link {
+        text-decoration: none;
+        color: #f05fb6;
+        font-size: 16px;
+    }
+}
