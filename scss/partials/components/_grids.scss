@@ -32,6 +32,13 @@
         }
     }
 }
+.reserva-cumple {
+    text-align: center;
+    .form-contacto {
+        text-decoration: none;
+        color: #f05fb6;
+    }
+}
 
 @media (max-width: 576px) {
     .container-prod {
