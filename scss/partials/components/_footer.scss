@@ -12,3 +12,16 @@
         font-size: 16px;
     }
 }
+
+@media (max-width: 576px) {
+    .footer-container {
+        @include mixins.flex(column,center,center);
+        margin-left: 12px;
+    }
+}
+@media (min-width:577px) and (max-width:990px) {
+    .footer-container {
+        @include mixins.flex(column,center,center);
+        margin-left: 18px;
+    }
+}

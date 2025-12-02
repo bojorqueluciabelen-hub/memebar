@@ -32,3 +32,53 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .container-prod {
+        @include mixins.grid(1fr,auto,2px,2px);
+        .card-producto {
+            @include mixins.flex(column,center,center);
+        .titulo-menu {
+            margin: 8px;
+            font-size: 18px;
+            }
+        }
+    }
+    .container-helados {
+        @include mixins.grid(1fr,auto,2px,2px); 
+        .card-producto {  
+            @include mixins.flex(column,center,center);
+            .img-menu-hel {
+                margin: 15px;
+                width: 200px;
+                height: 250px;
+            }
+            .titulo-menu {
+                    margin: 15px;
+                    font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width:577px) and (max-width:990px) {
+    .container-prod {
+        .card-producto {
+            @include mixins.flex(column,center,center);
+            .titulo-menu {
+            margin: 8px;
+            font-size: 18px;
+            }
+        }
+    }
+    .container-helados {
+        .card-producto {
+            @include mixins.flex(column,center,center);
+            .titulo-menu {
+            margin: 8px;
+            font-size: 18px;
+            }
+        }
+    }
+}
+

@@ -1,5 +1,4 @@
 @use '../utilities/mixins';
-
 .novedades {
     @include mixins.flex(column,center,center);
     width: 800px;
@@ -15,12 +14,36 @@
             width: 300px;
             height: 50px;
         }
-        .boton_enviar {
-            display: inline-block;
-            background-color: gray;
-            padding: 10px 15px;
-            border: 1px solid black;
-            border-radius: 6px;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .novedades {
+        width: 350px;
+        margin-left: 30px;
+        padding: 10px 40px;
+    }
+    h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+    .suscribir {
+        @include mixins.flex(column,space-between,center);
+        gap: 5px;
+        .form-control {
+            width: 150px;
         }
+    }
+}
+@media (min-width:577px) and (max-width:990px) {
+    .novedades {
+        width: 600px;
+        margin-left: 100px;
+        padding: 15px 50px;
+    }
+    h3 {
+        font-size: 12px;
+        text-align: center;
     }
 }

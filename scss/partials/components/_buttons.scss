@@ -1,0 +1,5 @@
+@use '../utilities/extend';
+
+.boton_enviar {
+    @extend %button;
+}
