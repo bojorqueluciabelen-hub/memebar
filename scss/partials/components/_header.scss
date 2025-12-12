@@ -1,4 +1,9 @@
 @use '../utilities/mixins';
+
+@keyframes a-hover{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 .nav-container {
     @include mixins.flex(row,space-between,center);
     .link-home {
@@ -19,8 +24,11 @@
                 color: #f05fb6;
                 text-decoration: none;
                 &:hover {
+                    background-image: linear-gradient(to top, #f05fb6, #fa6dc1,black);
                     color: black;
-                    background-color: #f05fb6;
+                    animation-name: a-hover;
+                    animation-iteration-count: 1;
+                    animation-duration: 0.3s;    
                 }
             }
         }
