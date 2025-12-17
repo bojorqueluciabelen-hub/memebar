@@ -47,13 +47,22 @@
             .mimenu-links {
                 @include mixins.flex(column,space-evenly,flex-start);
                 gap: 8px;
+                .minav-link {
+                    font-size: 20px;
+                }
             }
         }
     }
 }
 
-@media (min-width:577px) and (max-width:990px) {
-    .minav-link {
-        font-size: 22px;
+@media (min-width:577px) and (max-width:1024px) {
+    .mi-nav {
+        .nav-container {
+            .mi-menu {
+                .mimenu-links {
+                    gap: 15px;
+                }
+            }
+        }
     }
 }

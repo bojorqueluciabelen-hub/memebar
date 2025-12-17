@@ -1,15 +1,15 @@
 @use '../utilities/mixins';
 .novedades {
     @include mixins.flex(column,center,center);
-    width: 800px;
-    margin-left: 250px;
+    width: 90%;
+    margin-left: 100px;
     padding: 20px 80px;
     h3 {
         font-size: 24px;
     }
     .suscribir {
-        @include mixins.flex(row,space-between,center);
-        gap: 5px;
+        @include mixins.flex(column,space-between,center);
+        gap: 10px;
         .form-control {
             width: 300px;
             height: 50px;
@@ -20,9 +20,9 @@
 
 @media (max-width: 576px) {
     .novedades {
-        width: 350px;
-        margin-left: 30px;
-        padding: 10px 40px;
+        width: 95%;
+        margin-left: 20px;
+        padding: 10px 30px;
     }
     h3 {
         font-size: 12px;
@@ -30,13 +30,14 @@
     }
     .suscribir {
         @include mixins.flex(column,space-between,center);
+        width: 100%;
         gap: 5px;
         .form-control {
             width: 150px;
         }
     }
 }
-@media (min-width:577px) and (max-width:990px) {
+@media (min-width:577px) and (max-width:1024px) {
     .novedades {
         width: 600px;
         margin-left: 100px;

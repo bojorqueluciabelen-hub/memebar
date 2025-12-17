@@ -33,7 +33,7 @@
     }
 }
 
-@media (min-width:577px) and (max-width:990px) {
+@media (min-width:577px) and (max-width:1024px) {
     .form-container {
         @include mixins.flex(column,space-evenly,center);
         .div-form {

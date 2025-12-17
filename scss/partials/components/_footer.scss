@@ -19,7 +19,7 @@
         margin-left: 12px;
     }
 }
-@media (min-width:577px) and (max-width:990px) {
+@media (min-width:577px) and (max-width:1024px) {
     .footer-container {
         @include mixins.flex(column,center,center);
         margin-left: 18px;

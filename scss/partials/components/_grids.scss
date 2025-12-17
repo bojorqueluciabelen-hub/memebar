@@ -1,7 +1,14 @@
 @use '../utilities/mixins';
 
+.portada {
+    width: 95%;
+    height: 400px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
 .container-prod {
     @include mixins.grid(1fr 1fr,1fr 1fr,15px,10px);
+    margin-top: 150px;
     .card-producto {
         @include mixins.flex(auto,auto,center);
         .img-menu {
@@ -45,8 +52,16 @@
 }
 
 @media (max-width: 576px) {
+    .portada {
+        width: 98%;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        height: 250px;
+    }
     .container-prod {
         @include mixins.grid(1fr,auto,2px,2px);
+        border: 2px solid #f05fb6;
+        margin-top: 0px;
         .card-producto {
             @include mixins.flex(column,center,center);
         .titulo-menu {
@@ -72,15 +87,16 @@
     }
 }
 
-@media (min-width:577px) and (max-width:990px) {
+@media (min-width:577px) and (max-width:1024px) {
     .container-prod {
-        .card-producto {
-            @include mixins.flex(column,center,center);
-            .titulo-menu {
-            margin: 8px;
-            font-size: 18px;
+        margin-top: 5px;
+            .card-producto {
+                @include mixins.flex(column,center,center);
+                .titulo-menu {
+                margin: 8px;
+                font-size: 18px;
+                }
             }
-        }
     }
     .container-helados {
         .card-producto {
