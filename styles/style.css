@@ -388,7 +388,6 @@ p {
     grid-template-rows: auto;
     gap: 2px;
     margin: 2px;
-    border: 2px solid #f05fb6;
     margin-top: 0px;
   }
   .container-prod .card-producto {
