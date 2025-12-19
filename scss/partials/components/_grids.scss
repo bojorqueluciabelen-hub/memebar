@@ -60,7 +60,6 @@
     }
     .container-prod {
         @include mixins.grid(1fr,auto,2px,2px);
-        border: 2px solid #f05fb6;
         margin-top: 0px;
         .card-producto {
             @include mixins.flex(column,center,center);
